@@ -6,12 +6,12 @@ import { media } from '../styles/mediaQuery';
 
 export const Header = styled.header`
     height: 80px;
-    background-color: #405554;
+    background-color: rgba(59, 61, 48, 0.5);
 `;
 
 
 export const ProjectPageWrapper = styled.div`
-    background-color: rgba(64, 85, 84, 0.8);
+    background-color: rgba(91, 94, 74, 0.71);
 `;
 
 
@@ -193,7 +193,7 @@ export const ProjectLink = styled(Button)`
 
 export const Footer = styled.footer`
     height: 80px;
-    background-color: #405554;
+    background-color: rgba(59, 61, 48, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,9 +211,9 @@ export const Footer = styled.footer`
         `}
 
         a {
-            color: #E6E0CB;
+            color: #D6C3B5;
             text-decoration: none;
-            border-bottom: 1px solid #E6E0CB;
+            border-bottom: 1px solid #D6C3B5;
         }
     }
 `;

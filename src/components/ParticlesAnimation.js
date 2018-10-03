@@ -6,6 +6,11 @@ const Particles = styled.div`
     position: absolute;
     width: 100%;
     height: 100vh !important;
+
+    .particles-js-canvas-el {
+        width: 100%;
+        height: 99%;
+    }
 `;
 
 export default class ParticlesAnimation extends React.Component {

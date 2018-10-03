@@ -9,7 +9,7 @@ const Nav = styled.nav`
     text-align: center;
     bottom: ${props => props.other ? 'none' : '0'};
     color: #fff8e1;
-    background-color : ${props => props.other ? '#405554' : 'inherit'};
+    background-color : inherit;
     ul {
         border-top: ${props => props.other ? '0' : '1px solid #E6E0CB'};
         border-bottom: ${props => props.other ? '1px solid #E6E0CB' : '0'};
@@ -44,11 +44,19 @@ const Nav = styled.nav`
             a {
                 color: inherit;
                 text-decoration: none;
+                padding-left: 10px;
+                padding-right: 10px;
                 padding-top: ${props => props.other ? '0' : '18px'};
                 padding-bottom: ${props => props.other ? '23px' : '0'};
                 border-top: ${props => props.other ? '0' : '5px solid transparent'};
                 border-bottom: ${props => props.other ? '5px solid transparent' : '0'};
                 transition: border-color .4s ease-in;
+                
+                ${media.smallLaptop`
+                    padding-left: 15px;
+                    padding-right: 15px;
+                `}
+
                 &:hover {
                     border-color: #E6E0CB;
                 }
