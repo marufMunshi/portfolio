@@ -12,9 +12,9 @@ const HomePage = () => {
             <Header>
                 <ParticlesAnimation />
                 <HeroContent>
-                    <h1>Maruf.Me</h1>
+                    <h1>Maruf Hasan</h1>
                     <p>
-                    Hello! My name is Maruf Hasan, and I'm a Front-end Developer from Bangladesh.
+                    I'm a Front-end Developer from Bangladesh.
                     <br />
                     Comfortable working with React, Redux, JavaScript, HTML, Sass, and CSS.
                     </p>
@@ -33,7 +33,7 @@ const HomePage = () => {
 
                     <p className="mailLink"> 
                         <a href="mailto:marufhasanmunshi@gmail.com">
-                            marufhasanmunshi@gmail
+                            marufhasanmunshi@gmail.com
                         </a> 
                     </p>
 
@@ -43,6 +43,7 @@ const HomePage = () => {
                     <ul>
                         <li><Link to={"/"}>Home</Link></li>
                         <li><Link to={"/projects"}>Projects</Link></li>
+                        <li><a href="https://drive.google.com/open?id=1tMpRW1UZ6qOq1xOmk55zfMBkqQpnaYfu" target="_blank">My Resume</a></li>
                     </ul>
                 </Nav>
             </Header>
