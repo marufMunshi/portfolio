@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Header from './Header';
 import HeroContent from './HeroContent';
 import ParticlesAnimation from './ParticlesAnimation';
@@ -38,14 +37,7 @@ const HomePage = () => {
                     </p>
 
                 </HeroContent>
-
-                <Nav>
-                    <ul>
-                        <li><Link to={"/"}>Home</Link></li>
-                        <li><Link to={"/projects"}>Projects</Link></li>
-                        <li><a href="https://drive.google.com/open?id=1tMpRW1UZ6qOq1xOmk55zfMBkqQpnaYfu" target="_blank">My Resume</a></li>
-                    </ul>
-                </Nav>
+                <Nav />
             </Header>
         </div>
     );

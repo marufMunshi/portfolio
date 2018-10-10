@@ -1,8 +1,10 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { media } from '../styles/mediaQuery';
 
 
-const Nav = styled.nav`
+const StyledNav = styled.nav`
     position: ${props => props.other ? 'relative' : 'absolute'};
     width: 100%;
     height: ${props => props.other ? '100%' : '70px'};
@@ -64,5 +66,31 @@ const Nav = styled.nav`
         }
     }
 `;
+
+
+const Nav = (props) => {
+    return (
+
+        props.other
+            ?
+            <StyledNav other>
+                <ul>
+                    <li><Link to={"/"}>Home</Link></li>
+                    <li><Link to={"/projects"}>Projects</Link></li>
+                    <li><a href="https://drive.google.com/open?id=1tMpRW1UZ6qOq1xOmk55zfMBkqQpnaYfu" target="_blank">My Resume</a></li>
+                </ul>
+            </StyledNav>
+            :
+            <StyledNav>
+                <ul>
+                    <li><Link to={"/"}>Home</Link></li>
+                    <li><Link to={"/projects"}>Projects</Link></li>
+                    <li><a href="https://drive.google.com/open?id=1tMpRW1UZ6qOq1xOmk55zfMBkqQpnaYfu" target="_blank">My Resume</a></li>
+                </ul>
+            </StyledNav>
+
+    );
+};
+
 
 export default Nav;
