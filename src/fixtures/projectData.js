@@ -42,16 +42,16 @@ const projectData = [
         liveLink: 'https://munshi-calculator.netlify.com/' 
     },
     {
-        title: 'Drum Kit',
+        title: 'Pomodoro Clock',
         builtWith: ['react'],
-        info: 'Press button or click to play various drum sound.',
+        info: 'Timer clock using pomodoro technique.',
         codeLink: 'https://github.com/marufMunshi/pomodoro-clock',
         liveLink: 'https://munshi-pomodoro-clock.netlify.com/' 
     },
     {
-        title: 'Pomodoro Clock',
+        title: 'Drum Kit',
         builtWith: ['react'],
-        info: 'Timer clock using pomodoro technique.',
+        info: 'Press button or click to play various drum sound.',
         codeLink: 'https://github.com/marufMunshi/drum-machine',
         liveLink: 'https://munshi-drum-kit.netlify.com/' 
     },
